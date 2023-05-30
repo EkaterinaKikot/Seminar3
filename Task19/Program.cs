@@ -1,10 +1,20 @@
 ﻿Console.Clear();
-Console.Write("Введите число: ");
-int n = int.Parse(Console.ReadLine()!);
-if (n < 100000 || n > 9999)
-{
+Console.WriteLine("Введите число: ");
+string number = Console.ReadLine();
+int n = number.Length;
 
+if (n == 5)
+{
+    if (number[0] == number[4] && number[1] == number[3])
+    {
+        Console.WriteLine($"{number} - Палиндром");
+    }
+    else
+    {
+        Console.WriteLine($"{number} - НЕ палиндром");
+    }
 }
+
 
 
 
