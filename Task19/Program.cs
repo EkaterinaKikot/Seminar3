@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
+string number = Console.ReadLine()!;
 int n = number.Length;
 
 if (n == 5)
